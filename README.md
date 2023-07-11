@@ -18,6 +18,8 @@ You will receive an SMS containing a transaction URL. Keep this handy as you'll 
 
 On your Ubuntu machine, run the following commands one-by-one in terminal:
 
+```bash
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup install stable
@@ -31,8 +33,12 @@ git clone https://github.com/AleoHQ/snarkOS.git --depth 1
 cd snarkOS
 ./build_ubuntu.sh
 cargo install --path .
+```
+
 
 ## Step 3: Install Wallet and Deploy App
+
+```bash
 
 cd $HOME
 mkdir demo_deploy_Leo_app && cd demo_deploy_Leo_app
@@ -50,3 +56,4 @@ PRIVATEKEY="your-private-key"
 
 RECORD=""
 snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}" --query "https://vm.aleo.org/api" --path "./${APPNAME}/build/" --broadcast "https://vm.aleo.org/api/testnet3/transaction/broadcast" --fee 600000 --record "${RECORD}"
+```
