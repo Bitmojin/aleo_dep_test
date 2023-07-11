@@ -43,10 +43,10 @@ PATHTOAPP=$(realpath -q $APPNAME)
 cd $PATHTOAPP && cd ..
 PRIVATEKEY="your-private-key"
 
-# Go back to the transaction URL from your SMS and find the path:
-# executions>transitions>outputs>0: type:"record", value:"recordxxxx"
-# Copy the record value value and use it in the Aleo Tools website's Record tab along with your view key to get your record.
-# Enter this value below in place of "".
+### Go back to the transaction URL from your SMS and find the path:
+### executions>transitions>outputs>0: type:"record", value:"recordxxxx"
+### Copy the record value value and use it in the Aleo Tools website's Record tab along with your view key to get your record.
+### Enter this value below in place of "".
 
 RECORD=""
 snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}" --query "https://vm.aleo.org/api" --path "./${APPNAME}/build/" --broadcast "https://vm.aleo.org/api/testnet3/transaction/broadcast" --fee 600000 --record "${RECORD}"
