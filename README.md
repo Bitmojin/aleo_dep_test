@@ -35,7 +35,7 @@ cargo install --path .
 ```
 
 
-## Step 3: Install Wallet and Deploy App
+## Step 3: Deployment
 
 ```bash
 
