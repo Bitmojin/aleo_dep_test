@@ -14,8 +14,7 @@ Text **"+1-867-888-5688"** with the message: **"send 50 credits to 'your-aleo-ad
 
 You will receive an SMS containing a transaction URL. Keep this handy as you'll need the "Record" value from this in the final step.
 
-## Step 2: Install Required Software
-
+## Step 2: Install Requirements
 On your Ubuntu machine, run the following commands one-by-one in terminal:
 
 ```bash
